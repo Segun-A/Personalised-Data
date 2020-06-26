@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Fri Jun 26 2020 12:06:22 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="5ee49f440560afa0fb7d05ff" data-wf-site="5ee49f44fff23d43ce71418b">
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/dashboard-4d9140.webflow.css" rel="stylesheet" type="text/css">
+  <style>@media (min-width:992px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="868a5dcb-f7ef-6a15-a43f-595d5461f0c6"] {display:block;}html.w-mod-js:not(.w-mod-ix) [data-w-id="70455c99-7c91-7baf-7060-cf10517b386c"] {-webkit-transform:translate3d(-500PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-500PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-500PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-500PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="70455c99-7c91-7baf-7060-cf10517b38a0"] {opacity:0;-webkit-transform:translate3d(0, -100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="7312e4b9-83db-9712-bda9-99350c8c2f10"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="49a81ba2-f97f-6d74-793e-dbbe5cdaee44"] {-webkit-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="7a66ec23-bf0f-b84b-c366-31e5c8ecbe9a"] {-webkit-transform:translate3d(0, 200PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 200PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 200PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 200PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="145c5754-e682-f56f-9c7b-2c421819ee8e"] {-webkit-transform:translate3d(0, 300PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 300PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 300PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 300PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="33f91b3e-eeec-4c33-69dd-6680073e2254"] {-webkit-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="73c8b4ba-343f-2a6b-73c3-936124eb8ac8"] {opacity:0;}}@media (max-width:991px) and (min-width:768px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="868a5dcb-f7ef-6a15-a43f-595d5461f0c6"] {display:block;}html.w-mod-js:not(.w-mod-ix) [data-w-id="70455c99-7c91-7baf-7060-cf10517b386c"] {-webkit-transform:translate3d(-500PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-500PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-500PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-500PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="70455c99-7c91-7baf-7060-cf10517b38a0"] {opacity:0;-webkit-transform:translate3d(0, -100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, -100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, -100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, -100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}html.w-mod-js:not(.w-mod-ix) [data-w-id="7312e4b9-83db-9712-bda9-99350c8c2f10"] {opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="49a81ba2-f97f-6d74-793e-dbbe5cdaee44"] {-webkit-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="7a66ec23-bf0f-b84b-c366-31e5c8ecbe9a"] {-webkit-transform:translate3d(0, 200PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 200PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 200PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 200PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="145c5754-e682-f56f-9c7b-2c421819ee8e"] {-webkit-transform:translate3d(0, 300PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 300PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 300PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 300PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}html.w-mod-js:not(.w-mod-ix) [data-w-id="33f91b3e-eeec-4c33-69dd-6680073e2254"] {-webkit-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;}}@media (max-width:767px) and (min-width:480px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="70455c99-7c91-7baf-7060-cf10517b386b"] {-webkit-transform:translate3d(-200PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-200PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-200PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-200PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}@media (max-width:479px) {html.w-mod-js:not(.w-mod-ix) [data-w-id="70455c99-7c91-7baf-7060-cf10517b386b"] {-webkit-transform:translate3d(-200PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-200PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-200PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-200PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);}}</style>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Exo:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic","Poppins:regular,500,600"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+</head>
+<body class="body">
+  <div data-w-id="868a5dcb-f7ef-6a15-a43f-595d5461f0c6" class="loader-section _1">
+    <div data-w-id="868a5dcb-f7ef-6a15-a43f-595d5461f0c7" data-animation-type="lottie" data-src="documents/Loading-Ani1.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="1.4833333333333334" data-duration="0" class="lottie-animation-2"></div><img src="images/logo-2.svg" alt="" class="logo-2"></div>
+  <div class="page-wrapper">
+    <div class="mobile-nav"><a data-w-id="70455c99-7c91-7baf-7060-cf10517b3864" href="#" class="nav-links w-inline-block"><img src="https://uploads-ssl.webflow.com/5e59340e7bb9af36b79a4c14/5e5d65ca08593eb38693d98a_menu-button.svg" alt="" class="image-53"></a><a href="#" class="nav-links w-inline-block"><img src="https://uploads-ssl.webflow.com/5e59340e7bb9af36b79a4c14/5e5d675ed8805022b61b5357_home-24px.svg" alt="" class="image-53 _2"></a></div>
+    <div class="div-block">
+      <div data-w-id="70455c99-7c91-7baf-7060-cf10517b386b" class="menu-container-fixed">
+        <div data-w-id="70455c99-7c91-7baf-7060-cf10517b386c" class="left-menu">
+          <div class="menu-divs logo"><img src="images/BudgIT_logo.png" alt="" class="image-100"></div>
+          <div class="menu-links-box"><a href="#" class="menu-divs selected w-inline-block"><img src="images/internet-1.svg" alt="" class="image-52"><div class="text-block-110">Overview</div></a><a href="documents.html" class="menu-divs w-inline-block"><img src="images/document-1.svg" alt="" class="image-52"><div class="text-block-110">Documents</div></a><a href="account.html" class="menu-divs w-inline-block"><img src="images/user-1.svg" alt="" class="image-52"><div class="text-block-110">Account</div></a>
+            <div class="mobile-links">
+              <div class="div-line"></div><a href="#" class="menu-divs w-inline-block"><img src="images/account.svg" alt="" class="image-52"><div class="text-block-110">My Profile</div></a><a href="#" class="menu-divs w-inline-block"><img src="images/wheel.svg" alt="" class="image-52"><div class="text-block-110">Settings</div></a><a href="#" class="menu-divs w-inline-block"><img src="images/exit_to_app-24px.svg" alt="" class="image-52"><div class="text-block-110">Log Out</div></a></div>
+          </div>
+          <div class="legal-text-2">© 2020 All rights reserved.</div>
+        </div>
+      </div>
+      <div class="content-container">
+        <div class="right-container">
+          <div data-w-id="70455c99-7c91-7baf-7060-cf10517b38a0" class="intro">
+            <h1 class="intro__name">Hello Emeka</h1>
+            <p class="intro__welcome">Welcome back, see what’s happening in your location</p>
+          </div>
+          <div class="tabs__container">
+            <div data-duration-in="300" data-duration-out="100" class="w-tabs">
+              <div data-w-id="7312e4b9-83db-9712-bda9-99350c8c2f10" class="tabs-menu-2 w-tab-menu">
+                <a data-w-tab="Tab 1" class="tab-link-tab-1 w-inline-block w-tab-link w--current">
+                  <div>Allocations</div>
+                </a>
+                <a data-w-tab="Tab 2" class="tab-link-tab-1 w-inline-block w-tab-link">
+                  <div>Breakdown</div>
+                </a>
+              </div>
+              <div class="w-tab-content">
+                <div data-w-tab="Tab 1" class="tab-pane-tab-1-4 w-tab-pane w--tab-active">
+                  <div class="allocation__cards w-container">
+                    <div data-w-id="49a81ba2-f97f-6d74-793e-dbbe5cdaee44" class="allocation__card r-margin">
+                      <div class="allocation__items">
+                        <div class="icon__container blue"><img src="images/leader-1.svg" width="24" height="24" alt="" class="allocation__icon"></div>
+                        <div class="allocation__details">
+                          <div class="allocation__date">Feb, 2019</div>
+                          <div class="allocation__titles">
+                            <div class="allocation__title">Aba North</div>
+                            <div class="allocation__title generic">Allocation</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="allocation__main">
+                        <div class="allocation__number">139,873,200</div>
+                        <div class="allocation__currency">NGN</div>
+                      </div>
+                    </div>
+                    <div data-w-id="7a66ec23-bf0f-b84b-c366-31e5c8ecbe9a" class="allocation__card r-margin">
+                      <div class="allocation__items">
+                        <div class="icon__container pink"><img src="images/capitol-1.svg" alt="" class="allocation__icon"></div>
+                        <div class="allocation__details">
+                          <div class="allocation__date">Jan, 2020</div>
+                          <div class="allocation__titles">
+                            <div class="allocation__title">Abia</div>
+                            <div class="allocation__title generic">State Allocation</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="allocation__main">
+                        <div class="allocation__number">4,332,596,336</div>
+                        <div class="allocation__currency">NGN</div>
+                      </div>
+                    </div>
+                    <div data-w-id="145c5754-e682-f56f-9c7b-2c421819ee8e" class="allocation__card">
+                      <div class="allocation__items">
+                        <div class="icon__container purple"><img src="images/capitol-1-1.svg" alt="" class="allocation__icon"></div>
+                        <div class="allocation__details">
+                          <div class="allocation__date">Jan, 2020</div>
+                          <div class="allocation__title">Federal Allocation</div>
+                        </div>
+                      </div>
+                      <div class="allocation__main">
+                        <div class="allocation__number">287,929,206,666</div>
+                        <div class="allocation__currency">NGN</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-w-id="33f91b3e-eeec-4c33-69dd-6680073e2254" class="project w-container">
+                    <h1 class="projects__heading">Projects</h1>
+                    <div class="w-embed w-script">
+                      <style type="text/css">
+    .table-header {
+      background: rgba(29, 77, 98, 0.7) !important;
+      color: #ffffff !important;
+      font-weight: 600 !important;
+    }
+    .sub {
+      color: #626c84;
+      display: block;
+    }
+    .head-left {
+      border-radius: 8px 0 0 0;
+    }
+    .head-right {
+      border-radius: 0 8px 0 0;
+    }
+    .projects {
+      width: 42%;
+    }
+    .type {
+      padding: 8px 24px;
+      border-radius: 50px;
+      text-align: center;
+      font-weight: bold;
+      width: fit-content;
+      margin: auto;
+    }
+    .ongoing {
+      background: rgba(224, 138, 0, 0.08);
+      color: #e08a00;
+    }
+    .new {
+      background: rgba(31, 128, 183, 0.08);
+      color: #1f80b7;
+    }
+    table tfoot .links a {
+      display: inline-block;
+      background: #ffffff;
+      color: #0c171f;
+      padding: 8px 10px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    table tfoot .links a:hover {
+      background: rgba(28, 78, 99, 0.15);
+    }
+    table tfoot .links a:focus {
+      background: #1C4E63;
+      color: #ffffff;
+    }
+    .pagin {
+      background: transparent !important;
+      border-bottom: none !important;
+      padding: 40px 0 !important;
+    }
+    .links {
+      text-align: center;
+      text-decoration: none;
+    }
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (max-width: 1024px) {
+      .region {
+        display: none;
+      }
+      .agency {
+        display: none;
+      }
+    }
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      .status {
+        display: none;
+      }
+      .amount {
+        display: none;
+      }
+      .head-left {
+        border-radius: 8px 8px 0 0;
+      }
+    }
+  </style>
+                      <table id="tg-9O0wW" class="tg">
+                        <thead>
+                          <tr>
+                            <th class="tg-j1i3 table-header head-left">Projects</th>
+                            <th class="tg-j1i3 table-header region">Regions</th>
+                            <th class="tg-j1i3 table-header agency">Agency</th>
+                            <th class="tg-j1i3 table-header amount">Amount</th>
+                            <th class="tg-j1i3 table-header status head-right">Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td class="projects">
+                              Education intervention for youths (Bridging the tertiary institution entry requirement gap) 2020
+                            </td>
+                            <td class="region">
+                              Aba North
+                              <span class="sub">Abia State</span>
+                            </td>
+                            <td class="agency">
+                              Fed. University Kashere
+                              <span class="sub">Ministry of Education</span>
+                            </td>
+                            <td class="amount">
+                              50,000,000
+                              <span class="sub">Naira</span>
+                            </td>
+                            <td class="status">
+                              <div class="type ongoing">Ongoing</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="projects">
+                              Human trafficking prevention and education for youth and women empowerment
+                            </td>
+                            <td class="region">
+                              Aba North
+                              <span class="sub">Abia State</span>
+                            </td>
+                            <td class="agency">
+                              NAPTIP
+                              <span class="sub">Ministry of Justice</span>
+                            </td>
+                            <td class="amount">
+                              10,000,000
+                              <span class="sub">Naira</span>
+                            </td>
+                            <td class="status">
+                              <div class="type   new">New</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="projects">
+                              Sensitization &awareness campaign program for youth on the danger of drugs
+                            </td>
+                            <td class="region">
+                              Aba North
+                              <span class="sub">Abia State</span>
+                            </td>
+                            <td class="agency">
+                              NAPTIP
+                              <span class="sub">Ministry of Justice</span>
+                            </td>
+                            <td class="amount">
+                              20,000,000
+                              <span class="sub">Naira</span>
+                            </td>
+                            <td class="status">
+                              <div class="type new">New</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="projects">
+                              Construction of burgel - shall - bullan gawo - dungas janbil rural road
+                            </td>
+                            <td class="region">
+                              Aba North
+                              <span class="sub">Abia State</span>
+                            </td>
+                            <td class="agency">
+                              NBBRI
+                              <span class="sub">Ministry of Science & Tech</span>
+                            </td>
+                            <td class="amount">
+                              150,000,000
+                              <span class="sub">Naira</span>
+                            </td>
+                            <td class="status">
+                              <div class="type new">New</div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="projects">
+                              Enterpreneurial training and provision of conditional grants for grants for small and medium enterprises
+                            </td>
+                            <td class="region">
+                              Aba North
+                              <span class="sub">Abia State</span>
+                            </td>
+                            <td class="agency">
+                              NISPRI
+                              <span class="sub">Ministry of Agriculture</span>
+                            </td>
+                            <td class="amount">
+                              156,000,000
+                              <span class="sub">Naira</span>
+                            </td>
+                            <td class="status">
+                              <div class="type ongoing">Ongoing</div>
+                            </td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <td colspan="5" class="pagin">
+                              <div class="links"><a href="#">&laquo;</a> <a class="active" href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">&raquo;</a></div>
+                            </td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                      <script charset="utf-8">var TGSort = window.TGSort || function (n) { "use strict"; function r(n) { return n ? n.length : 0 } function t(n, t, e, o = 0) { for (e = r(n); o < e; ++o)t(n[o], o) } function e(n) { return n.split("").reverse().join("") } function o(n) { var e = n[0]; return t(n, function (n) { for (; !n.startsWith(e);)e = e.substring(0, r(e) - 1) }), r(e) } function u(n, r, e = []) { return t(n, function (n) { r(n) && e.push(n) }), e } var a = parseFloat; function i(n, r) { return function (t) { var e = ""; return t.replace(n, function (n, t, o) { return e = t.replace(r, "") + "." + (o || "").substring(1) }), a(e) } } var s = i(/^(?:\s*)([+-]?(?:\d+)(?:,\d{3})*)(\.\d*)?$/g, /,/g), c = i(/^(?:\s*)([+-]?(?:\d+)(?:\.\d{3})*)(,\d*)?$/g, /\./g); function f(n) { var t = a(n); return !isNaN(t) && r("" + t) + 1 >= r(n) ? t : NaN } function d(n) { var e = [], o = n; return t([f, s, c], function (u) { var a = [], i = []; t(n, function (n, r) { r = u(n), a.push(r), r || i.push(n) }), r(i) < r(o) && (o = i, e = a) }), r(u(o, function (n) { return n == o[0] })) == r(o) ? e : [] } function v(n) { if ("TABLE" == n.nodeName) { for (var a = function (r) { var e, o, u = [], a = []; return function n(r, e) { e(r), t(r.childNodes, function (r) { n(r, e) }) }(n, function (n) { "TR" == (o = n.nodeName) ? (e = [], u.push(e), a.push(n)) : "TD" != o && "TH" != o || e.push(n) }), [u, a] }(), i = a[0], s = a[1], c = r(i), f = c > 1 && r(i[0]) < r(i[1]) ? 1 : 0, v = f + 1, p = i[f], h = r(p), l = [], g = [], N = [], m = v; m < c; ++m) { for (var T = 0; T < h; ++T) { r(g) < h && g.push([]); var C = i[m][T], L = C.textContent || C.innerText || ""; g[T].push(L.trim()) } N.push(m - v) } t(p, function (n, t) { l[t] = 0; var a = n.classList; a.add("tg-sort-header"), n.addEventListener("click", function () { var n = l[t]; !function () { for (var n = 0; n < h; ++n) { var r = p[n].classList; r.remove("tg-sort-asc"), r.remove("tg-sort-desc"), l[n] = 0 } }(), (n = 1 == n ? -1 : +!n) && a.add(n > 0 ? "tg-sort-asc" : "tg-sort-desc"), l[t] = n; var i, f = g[t], m = function (r, t) { return n * f[r].localeCompare(f[t]) || n * (r - t) }, T = function (n) { var t = d(n); if (!r(t)) { var u = o(n), a = o(n.map(e)); t = d(n.map(function (n) { return n.substring(u, r(n) - a) })) } return t }(f); (r(T) || r(T = r(u(i = f.map(Date.parse), isNaN)) ? [] : i)) && (m = function (r, t) { var e = T[r], o = T[t], u = isNaN(e), a = isNaN(o); return u && a ? 0 : u ? -n : a ? n : e > o ? n : e < o ? -n : n * (r - t) }); var C, L = N.slice(); L.sort(m); for (var E = v; E < c; ++E)(C = s[E].parentNode).removeChild(s[E]); for (E = v; E < c; ++E)C.appendChild(s[v + L[E - v]]) }) }) } } n.addEventListener("DOMContentLoaded", function () { for (var t = n.getElementsByClassName("tg"), e = 0; e < r(t); ++e)try { v(t[e]) } catch (n) { } }) }(document)</script>
+                    </div>
+                  </div>
+                </div>
+                <div data-w-tab="Tab 2" class="tab-pane-tab-2 w-tab-pane">
+                  <div class="breakdowns w-container">
+                    <div class="breakdown mb-30">
+                      <div class="w-embed w-script">
+                        <link rel="stylesheet" href="https://res.cloudinary.com/eddy983/raw/upload/v1592361147/main.min.css">
+                        <div class="breakdown__card">
+                          <div class="breakdown__items">
+                            <h3 class="breakdown__title">Aba North Allocation</h3>
+                            <div class="breakdown__others">
+                              <div class="breakdown__view">
+                                <p class="breakdown__text">View</p>
+                                <button class="btn btn__view" onclick="openChart(event,'chart')">
+            <svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path d="M0.858132 10.5102V10.5102H11.3796H11.5296V10.6602V11.2998V11.4498H11.3796H0.326164H0.325131V11.2998L0.858132 10.5102ZM0.858132 10.5102L0.854724 10.5102M0.858132 10.5102L0.854724 10.5102M0.854724 10.5102C0.819814 10.511 0.791012 10.4831 0.789602 10.4501L0.854724 10.5102Z" fill="#AEB5BA" stroke="#AEB5BA" stroke-width="0.3"></path>
+                <path d="M11.7233 3.09986C11.5661 3.01725 11.3902 2.97461 11.2117 2.97461C10.6067 2.97461 10.1137 3.46497 10.1137 4.06993C10.1137 4.32577 10.2016 4.57362 10.3669 4.77083L9.16227 6.08201C8.8025 5.59698 8.11493 5.49571 7.6299 5.85549C7.5686 5.90079 7.51264 5.95143 7.462 6.01006L6.44663 5.17857C6.44663 5.16525 6.44663 5.15192 6.44663 5.1386C6.44663 4.53364 5.95627 4.04061 5.34865 4.04061C4.74369 4.04061 4.25067 4.53098 4.25067 5.1386C4.25067 5.24786 4.26666 5.35446 4.29864 5.4584L3.19799 6.83354C2.66232 6.54839 1.99607 6.75093 1.71092 7.28926C1.42576 7.82493 1.6283 8.49118 2.16663 8.77634C2.7023 9.06149 3.36855 8.85895 3.65371 8.32062C3.86424 7.9262 3.81361 7.4465 3.52845 7.10271L4.5225 5.86082C4.91958 6.31653 5.61249 6.3645 6.0682 5.96742C6.1748 5.87414 6.26275 5.76221 6.32671 5.63429L7.24081 6.38316C7.04359 6.95614 7.35007 7.57975 7.92305 7.77696C8.49602 7.97417 9.11963 7.66769 9.31685 7.09472C9.38081 6.9055 9.39413 6.70029 9.35149 6.50308L10.6947 5.03999C11.2303 5.32515 11.8939 5.11994 12.1791 4.58428C12.4642 4.04861 12.259 3.38502 11.7233 3.09986Z" fill="#AEB5BA"></path>
+              </g>
+              <defs>
+                <clippath id="clip0">
+                  <rect width="12.3077" height="12.3077" fill="white"></rect>
+                </clippath>
+              </defs>
+            </svg>
+          </button>
+                                <button class="btn btn__view active" onclick="openChart(event,'table')">
+            <svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path d="M10.7692 0.504883H1.53846C0.690261 0.504883 0 1.19514 0 2.04334V10.2484C0 11.0966 0.690261 11.7869 1.53846 11.7869H10.7692C11.6174 11.7869 12.3077 11.0966 12.3077 10.2484V2.04334C12.3077 1.19514 11.6174 0.504883 10.7692 0.504883ZM3.84615 4.0946H5.64106V5.63306H3.84615V4.0946ZM2.82048 5.63306H1.02567V4.0946H2.82048V5.63306ZM6.66664 4.0946H8.46154V5.63306H6.66664V4.0946ZM9.48721 4.0946H11.282V5.63306H9.48721V4.0946ZM1.02567 6.65873H2.82048V8.19719H1.02567V6.65873ZM3.84615 6.65873H5.64106V8.19719H3.84615V6.65873ZM5.64106 9.22286V10.7613H3.84615V9.22286H5.64106ZM6.66664 9.22286H8.46154V10.7613H6.66664V9.22286ZM6.66664 8.19719V6.65873H8.46154V8.19719H6.66664ZM9.48721 6.65873H11.282V8.19719H9.48721V6.65873ZM1.02567 10.2484V9.22286H2.82048V10.7613H1.53846C1.25592 10.7613 1.02567 10.5311 1.02567 10.2484ZM10.7692 10.7613H9.48721V9.22286H11.282V10.2484C11.282 10.5311 11.0518 10.7613 10.7692 10.7613Z" fill="#AEB5BA"></path>
+              </g>
+              <defs>
+                <clippath id="clip0">
+                  <rect width="12.3077" height="12.3077" fill="white"></rect>
+                </clippath>
+              </defs>
+            </svg>
+          </button>
+                              </div>
+                              <a href="#" class="btn btn__download">Download</a>
+                            </div>
+                          </div>
+                          <div class="breakdown__charts">
+                            <div class="breakdown__table interactive" id="table">
+                              <table id="tg-9O0wW" class="tg">
+                                <thead>
+                                  <tr>
+                                    <th class="tg-j1i3 year">YEAR</th>
+                                    <th class="tg-j1i3 month">MONTH</th>
+                                    <th class="tg-j1i3 net-allocation">NET ALLOCATION</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      January
+                                    </td>
+                                    <td class="net-allocation">
+                                      2,699,959,019
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      February
+                                    </td>
+                                    <td class="net-allocation">
+                                      2,277,642,563
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      March
+                                    </td>
+                                    <td class="net-allocation">
+                                      1,938,447,218
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      April
+                                    </td>
+                                    <td class="net-allocation">
+                                      2,056,356,618
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      May
+                                    </td>
+                                    <td class="net-allocation">
+                                      2,080,023,525
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      June
+                                    </td>
+                                    <td class="net-allocation">
+                                      3,550,924,481
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      July
+                                    </td>
+                                    <td class="net-allocation">
+                                      3,550,924,481
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      August
+                                    </td>
+                                    <td class="net-allocation">
+                                      3,219,815,507
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      September
+                                    </td>
+                                    <td class="net-allocation">
+                                      3,007,450,514
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      October
+                                    </td>
+                                    <td class="net-allocation">
+                                      2,637,594,251
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      November
+                                    </td>
+                                    <td class="net-allocation">
+                                      2,796,054,784
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      December
+                                    </td>
+                                    <td class="net-allocation">
+                                      2,532,539,708
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="breakdown__chart interactive" id="chart">
+                            </div>
+                          </div>
+                        </div>
+                        <script src="https://res.cloudinary.com/eddy983/raw/upload/v1592144009/main.js"></script>
+                      </div>
+                    </div>
+                    <div data-w-id="73c8b4ba-343f-2a6b-73c3-936124eb8ac8" class="breakdown mb-30">
+                      <div class="w-embed w-script">
+                        <div class="breakdown__card">
+                          <div class="breakdown__items">
+                            <h3 class="breakdown__title">Aba State Allocation</h3>
+                            <div class="breakdown__others">
+                              <div class="breakdown__view">
+                                <p class="breakdown__text">View</p>
+                                <button class="btn btn__view" onclick="openChart(event,'chart')">
+            <svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path d="M0.858132 10.5102V10.5102H11.3796H11.5296V10.6602V11.2998V11.4498H11.3796H0.326164H0.325131V11.2998L0.858132 10.5102ZM0.858132 10.5102L0.854724 10.5102M0.858132 10.5102L0.854724 10.5102M0.854724 10.5102C0.819814 10.511 0.791012 10.4831 0.789602 10.4501L0.854724 10.5102Z" fill="#AEB5BA" stroke="#AEB5BA" stroke-width="0.3"></path>
+                <path d="M11.7233 3.09986C11.5661 3.01725 11.3902 2.97461 11.2117 2.97461C10.6067 2.97461 10.1137 3.46497 10.1137 4.06993C10.1137 4.32577 10.2016 4.57362 10.3669 4.77083L9.16227 6.08201C8.8025 5.59698 8.11493 5.49571 7.6299 5.85549C7.5686 5.90079 7.51264 5.95143 7.462 6.01006L6.44663 5.17857C6.44663 5.16525 6.44663 5.15192 6.44663 5.1386C6.44663 4.53364 5.95627 4.04061 5.34865 4.04061C4.74369 4.04061 4.25067 4.53098 4.25067 5.1386C4.25067 5.24786 4.26666 5.35446 4.29864 5.4584L3.19799 6.83354C2.66232 6.54839 1.99607 6.75093 1.71092 7.28926C1.42576 7.82493 1.6283 8.49118 2.16663 8.77634C2.7023 9.06149 3.36855 8.85895 3.65371 8.32062C3.86424 7.9262 3.81361 7.4465 3.52845 7.10271L4.5225 5.86082C4.91958 6.31653 5.61249 6.3645 6.0682 5.96742C6.1748 5.87414 6.26275 5.76221 6.32671 5.63429L7.24081 6.38316C7.04359 6.95614 7.35007 7.57975 7.92305 7.77696C8.49602 7.97417 9.11963 7.66769 9.31685 7.09472C9.38081 6.9055 9.39413 6.70029 9.35149 6.50308L10.6947 5.03999C11.2303 5.32515 11.8939 5.11994 12.1791 4.58428C12.4642 4.04861 12.259 3.38502 11.7233 3.09986Z" fill="#AEB5BA"></path>
+              </g>
+              <defs>
+                <clippath id="clip0">
+                  <rect width="12.3077" height="12.3077" fill="white"></rect>
+                </clippath>
+              </defs>
+            </svg>
+          </button>
+                                <button class="btn btn__view active" onclick="openChart(event,'table')">
+            <svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path d="M10.7692 0.504883H1.53846C0.690261 0.504883 0 1.19514 0 2.04334V10.2484C0 11.0966 0.690261 11.7869 1.53846 11.7869H10.7692C11.6174 11.7869 12.3077 11.0966 12.3077 10.2484V2.04334C12.3077 1.19514 11.6174 0.504883 10.7692 0.504883ZM3.84615 4.0946H5.64106V5.63306H3.84615V4.0946ZM2.82048 5.63306H1.02567V4.0946H2.82048V5.63306ZM6.66664 4.0946H8.46154V5.63306H6.66664V4.0946ZM9.48721 4.0946H11.282V5.63306H9.48721V4.0946ZM1.02567 6.65873H2.82048V8.19719H1.02567V6.65873ZM3.84615 6.65873H5.64106V8.19719H3.84615V6.65873ZM5.64106 9.22286V10.7613H3.84615V9.22286H5.64106ZM6.66664 9.22286H8.46154V10.7613H6.66664V9.22286ZM6.66664 8.19719V6.65873H8.46154V8.19719H6.66664ZM9.48721 6.65873H11.282V8.19719H9.48721V6.65873ZM1.02567 10.2484V9.22286H2.82048V10.7613H1.53846C1.25592 10.7613 1.02567 10.5311 1.02567 10.2484ZM10.7692 10.7613H9.48721V9.22286H11.282V10.2484C11.282 10.5311 11.0518 10.7613 10.7692 10.7613Z" fill="#AEB5BA"></path>
+              </g>
+              <defs>
+                <clippath id="clip0">
+                  <rect width="12.3077" height="12.3077" fill="white"></rect>
+                </clippath>
+              </defs>
+            </svg>
+          </button>
+                              </div>
+                              <a href="#" class="btn btn__download">Download</a>
+                            </div>
+                          </div>
+                          <div class="breakdown__charts">
+                            <div class="breakdown__table interactive" id="table">
+                              <table id="tg-9O0wW" class="tg">
+                                <thead>
+                                  <tr>
+                                    <th class="tg-j1i3 year">YEAR</th>
+                                    <th class="tg-j1i3 month">MONTH</th>
+                                    <th class="tg-j1i3 net-allocation">NET ALLOCATION</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      January
+                                    </td>
+                                    <td class="net-allocation">
+                                      2,699,959,019
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      February
+                                    </td>
+                                    <td class="net-allocation">
+                                      2,277,642,563
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      March
+                                    </td>
+                                    <td class="net-allocation">
+                                      1,938,447,218
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      April
+                                    </td>
+                                    <td class="net-allocation">
+                                      2,056,356,618
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      May
+                                    </td>
+                                    <td class="net-allocation">
+                                      2,080,023,525
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      June
+                                    </td>
+                                    <td class="net-allocation">
+                                      3,550,924,481
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      July
+                                    </td>
+                                    <td class="net-allocation">
+                                      3,550,924,481
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      August
+                                    </td>
+                                    <td class="net-allocation">
+                                      3,219,815,507
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      September
+                                    </td>
+                                    <td class="net-allocation">
+                                      3,007,450,514
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      October
+                                    </td>
+                                    <td class="net-allocation">
+                                      2,637,594,251
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      November
+                                    </td>
+                                    <td class="net-allocation">
+                                      2,796,054,784
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      December
+                                    </td>
+                                    <td class="net-allocation">
+                                      2,532,539,708
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="breakdown__chart interactive" id="chart">
+                            </div>
+                          </div>
+                        </div>
+                        <script src="https://res.cloudinary.com/eddy983/raw/upload/v1592144009/main.js"></script>
+                      </div>
+                    </div>
+                    <div data-w-id="4babc487-58ef-4405-795f-3c6e554bf47c" style="opacity:0" class="breakdown">
+                      <div class="w-embed w-script">
+                        <div class="breakdown__card">
+                          <div class="breakdown__items">
+                            <h3 class="breakdown__title">Federal Allocation</h3>
+                            <div class="breakdown__others">
+                              <div class="breakdown__view">
+                                <p class="breakdown__text">View</p>
+                                <button class="btn btn__view" onclick="openChart(event,'chart')">
+            <svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path d="M0.858132 10.5102V10.5102H11.3796H11.5296V10.6602V11.2998V11.4498H11.3796H0.326164H0.325131V11.2998L0.858132 10.5102ZM0.858132 10.5102L0.854724 10.5102M0.858132 10.5102L0.854724 10.5102M0.854724 10.5102C0.819814 10.511 0.791012 10.4831 0.789602 10.4501L0.854724 10.5102Z" fill="#AEB5BA" stroke="#AEB5BA" stroke-width="0.3"></path>
+                <path d="M11.7233 3.09986C11.5661 3.01725 11.3902 2.97461 11.2117 2.97461C10.6067 2.97461 10.1137 3.46497 10.1137 4.06993C10.1137 4.32577 10.2016 4.57362 10.3669 4.77083L9.16227 6.08201C8.8025 5.59698 8.11493 5.49571 7.6299 5.85549C7.5686 5.90079 7.51264 5.95143 7.462 6.01006L6.44663 5.17857C6.44663 5.16525 6.44663 5.15192 6.44663 5.1386C6.44663 4.53364 5.95627 4.04061 5.34865 4.04061C4.74369 4.04061 4.25067 4.53098 4.25067 5.1386C4.25067 5.24786 4.26666 5.35446 4.29864 5.4584L3.19799 6.83354C2.66232 6.54839 1.99607 6.75093 1.71092 7.28926C1.42576 7.82493 1.6283 8.49118 2.16663 8.77634C2.7023 9.06149 3.36855 8.85895 3.65371 8.32062C3.86424 7.9262 3.81361 7.4465 3.52845 7.10271L4.5225 5.86082C4.91958 6.31653 5.61249 6.3645 6.0682 5.96742C6.1748 5.87414 6.26275 5.76221 6.32671 5.63429L7.24081 6.38316C7.04359 6.95614 7.35007 7.57975 7.92305 7.77696C8.49602 7.97417 9.11963 7.66769 9.31685 7.09472C9.38081 6.9055 9.39413 6.70029 9.35149 6.50308L10.6947 5.03999C11.2303 5.32515 11.8939 5.11994 12.1791 4.58428C12.4642 4.04861 12.259 3.38502 11.7233 3.09986Z" fill="#AEB5BA"></path>
+              </g>
+              <defs>
+                <clippath id="clip0">
+                  <rect width="12.3077" height="12.3077" fill="white"></rect>
+                </clippath>
+              </defs>
+            </svg>
+          </button>
+                                <button class="btn btn__view active" onclick="openChart(event,'table')">
+            <svg width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path d="M10.7692 0.504883H1.53846C0.690261 0.504883 0 1.19514 0 2.04334V10.2484C0 11.0966 0.690261 11.7869 1.53846 11.7869H10.7692C11.6174 11.7869 12.3077 11.0966 12.3077 10.2484V2.04334C12.3077 1.19514 11.6174 0.504883 10.7692 0.504883ZM3.84615 4.0946H5.64106V5.63306H3.84615V4.0946ZM2.82048 5.63306H1.02567V4.0946H2.82048V5.63306ZM6.66664 4.0946H8.46154V5.63306H6.66664V4.0946ZM9.48721 4.0946H11.282V5.63306H9.48721V4.0946ZM1.02567 6.65873H2.82048V8.19719H1.02567V6.65873ZM3.84615 6.65873H5.64106V8.19719H3.84615V6.65873ZM5.64106 9.22286V10.7613H3.84615V9.22286H5.64106ZM6.66664 9.22286H8.46154V10.7613H6.66664V9.22286ZM6.66664 8.19719V6.65873H8.46154V8.19719H6.66664ZM9.48721 6.65873H11.282V8.19719H9.48721V6.65873ZM1.02567 10.2484V9.22286H2.82048V10.7613H1.53846C1.25592 10.7613 1.02567 10.5311 1.02567 10.2484ZM10.7692 10.7613H9.48721V9.22286H11.282V10.2484C11.282 10.5311 11.0518 10.7613 10.7692 10.7613Z" fill="#AEB5BA"></path>
+              </g>
+              <defs>
+                <clippath id="clip0">
+                  <rect width="12.3077" height="12.3077" fill="white"></rect>
+                </clippath>
+              </defs>
+            </svg>
+          </button>
+                              </div>
+                              <a href="#" class="btn btn__download">Download</a>
+                            </div>
+                          </div>
+                          <div class="breakdown__charts">
+                            <div class="breakdown__table interactive" id="table">
+                              <table id="tg-9O0wW" class="tg">
+                                <thead>
+                                  <tr>
+                                    <th class="tg-j1i3 year">YEAR</th>
+                                    <th class="tg-j1i3 month">MONTH</th>
+                                    <th class="tg-j1i3 net-allocation">NET ALLOCATION</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      January
+                                    </td>
+                                    <td class="net-allocation">
+                                      2,699,959,019
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      February
+                                    </td>
+                                    <td class="net-allocation">
+                                      2,277,642,563
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      March
+                                    </td>
+                                    <td class="net-allocation">
+                                      1,938,447,218
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      April
+                                    </td>
+                                    <td class="net-allocation">
+                                      2,056,356,618
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      May
+                                    </td>
+                                    <td class="net-allocation">
+                                      2,080,023,525
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      June
+                                    </td>
+                                    <td class="net-allocation">
+                                      3,550,924,481
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      July
+                                    </td>
+                                    <td class="net-allocation">
+                                      3,550,924,481
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      August
+                                    </td>
+                                    <td class="net-allocation">
+                                      3,219,815,507
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      September
+                                    </td>
+                                    <td class="net-allocation">
+                                      3,007,450,514
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      October
+                                    </td>
+                                    <td class="net-allocation">
+                                      2,637,594,251
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      November
+                                    </td>
+                                    <td class="net-allocation">
+                                      2,796,054,784
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="year">
+                                      2016
+                                    </td>
+                                    <td class="month">
+                                      December
+                                    </td>
+                                    <td class="net-allocation">
+                                      2,532,539,708
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="breakdown__chart interactive" id="chart">
+                            </div>
+                          </div>
+                        </div>
+                        <script src="https://res.cloudinary.com/eddy983/raw/upload/v1592144009/main.js"></script>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div data-hover="" data-delay="0" class="states__dropdown w-dropdown">
+              <div class="dropdown-toggle-10 w-dropdown-toggle">
+                <div class="text-block-111">Select state</div>
+                <div class="icon-5 w-icon-dropdown-toggle"></div>
+              </div>
+              <nav class="states__dropdown__list w-dropdown-list"><a href="#" class="states__dropdown__link w-dropdown-link">Abia</a><a href="#" class="states__dropdown__link w-dropdown-link">Adamawa</a><a href="#" class="states__dropdown__link w-dropdown-link">Akwa-ibom</a><a href="#" class="states__dropdown__link w-dropdown-link">Anambra</a><a href="#" class="states__dropdown__link w-dropdown-link">Bauchi</a></nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5ee49f44fff23d43ce71418b" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
+</html>
