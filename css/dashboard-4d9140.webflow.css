@@ -1532,6 +1532,10 @@ body {
   background-color: #fff;
 }
 
+.states__dropdown__list.w--open {
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.12);
+}
+
 .states__dropdown__link {
   background-color: transparent;
   color: #0c171f;
@@ -2352,9 +2356,6 @@ body {
   }
   .logo-2 {
     height: 24px;
-  }
-  .data__container {
-    display: none;
   }
 }
 
