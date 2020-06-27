@@ -1499,8 +1499,8 @@ body {
   height: 18px;
 }
 
-.states__dropdown {
-  position: absolute;
+.data__dropdown {
+  position: static;
   left: auto;
   top: 0%;
   right: 0%;
@@ -1970,6 +1970,22 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.data__container {
+  position: absolute;
+  left: auto;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.data__box {
+  position: relative;
+}
+
 @media screen and (max-width: 991px) {
   .date-div {
     width: 100%;
@@ -2261,7 +2277,7 @@ body {
     width: 20px;
     height: 20px;
   }
-  .states__dropdown {
+  .data__dropdown {
     display: none;
   }
   .documents__tab {
